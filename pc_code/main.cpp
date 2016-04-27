@@ -115,18 +115,18 @@ void ShowTestGui(bool * P_opened)
 	}
 	
 
-	ImGui::PlotLines("Sine", adc1arr, IM_ARRAYSIZE(adc1arr), 0, NULL, 0, 100, ImVec2(0,120));
+	ImGui::PlotLines("ADC1", adc1arr, IM_ARRAYSIZE(adc1arr), 0, NULL, 0, 100, ImVec2(0,120));
 	ImGui::SameLine();
 	static int adc1speed = 1;
 	const char* items[] = {"100Khz", "10Khz", "1Khz", "100Hz"};
 	ImGui::Combo("Speed##1", &adc1speed, items, IM_ARRAYSIZE(items));
 
-	ImGui::PlotLines("Cosine", adc2arr, IM_ARRAYSIZE(adc2arr), 0, NULL, 0, 100, ImVec2(0,120));
+	ImGui::PlotLines("ADC2", adc2arr, IM_ARRAYSIZE(adc2arr), 0, NULL, 0, 100, ImVec2(0,120));
 	ImGui::SameLine();
 	static int adc2speed = 1;
 	ImGui::Combo("Speed##2", &adc2speed, items, IM_ARRAYSIZE(items));
 	
-	ImGui::Text("DACs:");
+	ImGui::Text("DAC:");
 	ImGui::SliderInt("DAC value", &tint, 0, 100);
 	if(tintold != tint)
 	{
