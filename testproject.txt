@@ -1,0 +1,1 @@
+./Debug/main.cpp.o ./Debug/imgui_impl_glfw.cpp.o ./Debug/dear_imgui_imgui.cpp.o ./Debug/dear_imgui_imgui_demo.cpp.o ./Debug/dear_imgui_imgui_draw.cpp.o ./Debug/Serial_list_ports_linux.cc.o ./Debug/Serial_serial.cc.o ./Debug/Serial_unix.cc.o
